@@ -1,0 +1,57 @@
+body {
+    /* 全体の背景色 */
+    font-family: sans-serif;
+
+    background: #f0f0f0;
+}
+
+/* 中身の調整 */
+.container {
+    /* 横並びにするやつ */
+    display: flex;
+
+    gap: 20px;
+
+    /* 内側の調整 */
+    padding: 20px;
+
+}
+
+.left,
+.right {
+    background: white;
+    padding: 20px;
+
+    /* それぞれのdivで全体の半分を使うときの記述 */
+    width: 50%;
+
+    /* 角を丸めるときの記述 */
+    border-radius: 10px;
+}
+
+input,
+button {
+    /* blockになっているので、文字と削除のボタンが上下になっている。強制改行 */
+    display: block;
+    width: 95%;
+
+    /* 箱どうしの距離で、下を10pxあける */
+    margin-bottom: 10px;
+
+    /* 箱の中身の文字と線の距離 */
+    padding: 10px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    padding: 6px;
+}
+
+button {
+    cursor: pointer;
+}
